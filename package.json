@@ -1,0 +1,29 @@
+{
+  "name": "rick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "postcss src/styles/tailwindcss.css -o src/styles/styles.css",
+    "build-css-w": "postcss src/styles/tailwindcss.css -o src/styles/styles.css -w",
+    "build": "postcss src/styles/tailwindcss.css -o src/styles/styles.css && webpack --mode production",
+    "start": "webpack serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.4",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.3.2",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^4.5.0",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1",
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
